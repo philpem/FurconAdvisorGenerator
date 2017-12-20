@@ -18,7 +18,7 @@ button.generator-switcher{
 <script src="jquery.waitforimages.min.js"></script>
 <h1 class="change-title">Sierra Death Generator</h1>
 Generators: <span id="genlist"> </span>
-<p>Code by <a href="https://twitter.com/Foone">@Foone</a>, content by <a href="#" class="change-source">somebody</a>.</p>
+<p>Code by <a href="https://twitter.com/Foone">@Foone</a>, hacked about by Cosmo, content by <a href="#" class="change-source">somebody</a>.</p>
 <canvas id=death>No canvas!</canvas>
 <p>
 <textarea cols=40 rows=5 id=sourcetext></textarea>
@@ -39,6 +39,7 @@ if(window.location.hash.length > 0){
 }
 
 var generators={
+/*
 	'keen4':{
 		'title': 'Commander Keen 4',
 		'source':'id Software',
@@ -57,11 +58,18 @@ var generators={
 		'sourceurl':'https://en.wikipedia.org/wiki/Sierra_Entertainment',
 		'defaulttext':"Those curbs just sneak right\n    up on you, don't they?",
 	},
+*/
 	'sc2k':{
 		'title': 'SimCity 2000 Advisor',
 		'source':'Maxis Software',
 		'sourceurl':'https://en.wikipedia.org/wiki/Maxis',
 		'defaulttext':"YOU CAN'T CUT BACK ON\nFUNDING! YOU WILL\nREGRET THIS!",
+	},
+	'furcon':{
+		'title': 'Furry Con Advisors',
+		'source': 'Maxis Software and... the Furry Fandom.',
+		'sourceurl':'https://en.wikipedia.org/wiki/Furry_fandom',
+		'defaulttext':"YOU CAN'T SKIP\nANTHROCON!\nYOU WILL REGRET THIS!",
 	}
 }
 
