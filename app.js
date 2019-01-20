@@ -193,7 +193,7 @@ function loadJSONForGenerator(){
 }
 selectGenerator()
 
-$('#sourcetext').keyup(renderText)
+document.getElementById("sourcetext").addEventListener("input",renderText)
 $(window).resize(function () { renderText() });
 
 }
